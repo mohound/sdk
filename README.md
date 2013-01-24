@@ -7,7 +7,7 @@ Download latest version: [**0.1.4**](https://www.dropbox.com/s/v6xyrxtwkuy2lj8/M
 3. Be sure to have the **AdSupport** and **StoreKit** frameworks in your project (Build phases -> Link Binary With 
 Libraries).
 4. ``#import "MoHoundSDK.h"`` in every file where the SDK will be called.
-5. In your app's ``didFinishLaunchingWithOptions`` add the following line replacing KEY and SECRET with your info:  
+5. In your app's ``didFinishLaunchingWithOptions:`` add the following line replacing KEY and SECRET with your info:  
 
 ```objc    
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,8 +30,8 @@ to delete them** before releasing your app!:
   ...
 }
 ```
-This should give you a Pong from the server showing that everything is working.
 
+This should give you a Pong from the server showing that everything is working.
 
 ## Tracking in-app purchases
 If you own a game or have a free to download app and profit from user getting in-app content, follow this steps to get 
@@ -47,6 +47,7 @@ Once you get the products responses from apple on the ``didReceiveResponse`` met
     ...
 }
 ```
+
 ### 2. Register the purchase.
 When a user actually purchse a product send the transaction to Mohound like this:
 
@@ -65,7 +66,6 @@ When a user actually purchse a product send the transaction to Mohound like this
         }
     }
 }
-
 ```
 
 ## Tracking activations
@@ -92,4 +92,3 @@ asking for a real-world delivery, you can track those events using the following
 ```objc
 [MoHoundSDK trackPurchaseWithUSDValue:[NSNumber numberWithFloat:19.99] forItem:@"Diet coke pack."];
 ```
-
