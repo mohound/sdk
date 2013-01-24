@@ -43,7 +43,7 @@ Once you get the products responses from apple on the ``didReceiveResponse`` met
 ```objc
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
 {
-    [MoHoundSDK registerProducts: response.products];
+    [MoHoundSDK registerProducts:response.products];
     ...
 }
 ```
