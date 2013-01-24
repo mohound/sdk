@@ -6,7 +6,7 @@ Download latest version: [**0.1.4**](https://www.dropbox.com/s/v6xyrxtwkuy2lj8/M
 2. Untar the SDK and add the .a and the .h to the project
 3. Be sure to have the **AdSupport** and **StoreKit** frameworks in your project (Build phases -> Link Binary With 
 Libraries).
-4. ``#import "MoHoundSDK.h"`` either on your Prefix.pch or in every file where the SDK will be called.
+4. ``#import "MoHoundSDK.h"`` in every file where the SDK will be called.
 5. In your app's ``didFinishLaunchingWithOptions`` add the following line replacing KEY and SECRET with your info:  
 
 ```objc    
