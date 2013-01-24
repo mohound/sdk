@@ -54,10 +54,8 @@ When a user actually purchse a product send the transaction to Mohound like this
 ```objc
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
 {
-    for (SKPaymentTransaction *transaction in transactions)
-    {
-        switch (transaction.transactionState)
-        {
+    for (SKPaymentTransaction *transaction in transactions) {
+        switch (transaction.transactionState) {
             case SKPaymentTransactionStatePurchased:
                 [MoHoundSDK trackPurchase:transaction];
                 ...
@@ -89,6 +87,7 @@ If you need to track a purchase event that is not linked to an in-app purchase b
 asking for a real-world delivery, you can track those events using the following call.
 
 **IMPORTANT: The value should be in USD**
+
 ```objc
 [MoHoundSDK trackPurchaseWithUSDValue:[NSNumber numberWithFloat:19.99] forItem:@"Diet coke pack."];
 ```
