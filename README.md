@@ -7,7 +7,8 @@ Download latest version: [**0.1.4**](https://www.dropbox.com/s/v6xyrxtwkuy2lj8/M
 3. Be sure to have the **AdSupport** and **StoreKit** frameworks in your project (Build phases -> Link Binary With 
 Libraries).
 4. ``#import "MoHoundSDK.h"`` in every file where the SDK will be called.
-5. In your app's ``didFinishLaunchingWithOptions:`` add the following line replacing KEY and SECRET with your info:  
+5. In your app's ``application:didFinishLaunchingWithOptions:`` add the following line replacing KEY and SECRET with
+   your info:  
 
 ```objc    
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
