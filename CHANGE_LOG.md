@@ -1,3 +1,6 @@
+## 0.1.5
+* CPI Support
+
 ## 0.1.4
 * Added activation tracking
 * Added purchase for non in-app events
