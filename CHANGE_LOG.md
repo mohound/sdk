@@ -1,3 +1,6 @@
+## 0.1.6
+* Jailbroken in-app purchases detection
+
 ## 0.1.5
 * CPI Support
 
