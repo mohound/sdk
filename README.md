@@ -1,6 +1,6 @@
 # Mohound SDK
-Download latest version: **0.1.6** [tar.gz](https://www.dropbox.com/s/f537vyb7v0l1i1w/MohoundSDK-0.1.6.tar.gz) or
-[zip](https://www.dropbox.com/s/0x90i2sgmzpr3vr/MohoundSDK-0.1.6.zip)
+Download latest version: **0.1.7** [tar.gz](https://www.dropbox.com/s/dzwpzpj0kizgjhf/MohoundSDK-0.1.7.tar.gz) or
+[zip](https://www.dropbox.com/s/sxan7bpes1eln37/MohoundSDK-0.1.7.zip)
 
 ## Installation
 1. Download the SDK from any of the links provided at the top.
