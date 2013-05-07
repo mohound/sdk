@@ -1,5 +1,21 @@
 # Change Log
 
+## 0.1.8
+
+* SDK can be used now with the simulator (the server now responds to simulator
+  calls)
+* SDK library renamed to MohoundSDK (from MoHoundSDK), in order to reflect our
+  company name, so, you will need to rename any MoHound instance to **Mohound**
+* The SDK is now distributed as a framework, make sure to do the following
+  change:
+
+```objc
+// Older versions:
+#import "MoHoundSDK.h"
+// New version:
+#import <MohoundSDK/MohoundSDK.h>
+```
+
 ## 0.1.7
 
 * Remove UDID support
@@ -36,4 +52,3 @@
 
 * Bug fix with params on in-app purchases
 * Fingerprinting improvements
-
