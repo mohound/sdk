@@ -1,13 +1,14 @@
 # Mohound SDK
-Download latest version: [**0.1.8**](https://www.dropbox.com/s/oji1q8e3zkojyfz/MohoundSDK-0.1.8.zip)
+Download latest version: [**0.1.9**](https://www.dropbox.com/s/xbk1uehqzgk3k0k/MohoundSDK-0.1.9.zip)
 
 ## Installation
 1. Download and unzip the SDK.
 2. Add the whole MohoundSDK.framework folder to the project.
 3. Be sure to have the **AdSupport** and **StoreKit** frameworks in your project (Build phases -> Link Binary With 
 Libraries). If your deployment target is iOS 5.1 or less, make sure to set AdSupport as **Optional**.
-4. ``#import <MohoundSDK/MohoundSDK.h>`` in every file where the SDK will be called.
-5. In your app's ``application:didFinishLaunchingWithOptions:`` add the following line replacing KEY and SECRET with
+4. Go to **Build Settings** and under **Linking** find **Other Linker Flags** and add ``-ObjC``.
+5. ``#import <MohoundSDK/MohoundSDK.h>`` in every file where the SDK will be called.
+6. In your app's ``application:didFinishLaunchingWithOptions:`` add the following line replacing KEY and SECRET with
    your info:  
 
 ```objc    
