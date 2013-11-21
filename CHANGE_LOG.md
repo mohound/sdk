@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.9
+
+* Facebook attribution support.
+
 ## 0.1.8
 
 * SDK can be used now with the simulator (the server now responds to simulator
