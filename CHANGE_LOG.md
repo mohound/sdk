@@ -1,8 +1,13 @@
 # Change Log
 
+## 0.1.10
+
+* Add support for arm64 architecure
+
 ## 0.1.9
 
-* Facebook attribution support.
+* Full integration with Facebook
+* Fixes problem when reporting installations to CPI networks
 
 ## 0.1.8
 
@@ -56,3 +61,4 @@
 
 * Bug fix with params on in-app purchases
 * Fingerprinting improvements
+
