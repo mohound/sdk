@@ -14,7 +14,7 @@ Libraries). If your deployment target is iOS 5.1 or less, make sure to set AdSup
 ```objc    
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [MohoundSDK initWithAppKey:@"KEY" andSecret:@"SECRET"];
+  [MohoundSDK initWithAppKey:@"<#KEY#>" andSecret:@"<#SECRET#>"];
   ...
 }
 ```
@@ -26,7 +26,7 @@ to delete them** before releasing your app!:
 ```objc 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [MohoundSDK initWithAppKey:@"KEY" andSecret:@"SECRET"];
+  [MohoundSDK initWithAppKey:@"<#KEY#>" andSecret:@"<#SECRET#>"];
   [MohoundSDK setDebugMode:true];
   [MohoundSDK ping];
   ...
