@@ -3,7 +3,7 @@ Download latest version: [**0.0.1**](https://dropbox.com/link)
 
 ## Installation
 1. Download and unzip the SDK
-2. Copy the .jar file inside `lib` directory of your Android project
+2. Copy the .jar file inside the `lib` directory of your Android project
 
 **NOTE** If your project does not have a lib directory, place the .jar file in
 another directory and add the directory to your Java CLASSPATH variable.
@@ -37,8 +37,8 @@ another directory and add the directory to your Java CLASSPATH variable.
     <meta-data android:name="MohoundAppSecret" android:value="SECRET_KEY" />
 	```
 
-4. If you want to enable debug mode (prints verbosely to
-   Logger), add the following meta data tag:
+4. If you want to enable debug mode (prints verbosely to Logger), add the
+   following meta data tag:
    	```xml
    	<meta-data android:name="MohoundDebugMode" android:value="true">
    	```
