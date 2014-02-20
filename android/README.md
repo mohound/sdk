@@ -3,7 +3,7 @@ Download latest version: [**0.0.1**](https://dropbox.com/link)
 
 ## Installation
 1. Download and unzip the SDK
-2. Copy the .jar file inside `lib` folder of your Android project
+2. Copy the .jar file inside `lib` directory of your Android project
 
 **NOTE** If your project does not have a lib directory, place the .jar file in
 another directory and add the directory to your Java CLASSPATH variable.
