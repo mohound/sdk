@@ -30,7 +30,7 @@ another directory and add the directory to your Java CLASSPATH variable.
    	```
 
 3. Add Mohound settings meta data tags inside your `application` tag, replace
-   APP_KEY and SECRET_KEY with your keys:
+   `APP_KEY` and `SECRET_KEY` with your keys:
 
 	```xml
 	<meta-data android:name="MohoundAppKey" android:value="APP_KEY" />
