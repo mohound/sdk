@@ -3,7 +3,7 @@ Download latest version: [**0.0.1**](https://www.dropbox.com/s/fs0vprsehbbeuku/m
 
 ## Installation
 1. Download and unzip the SDK
-2. Copy the .jar file inside the `lib` directory of your Android project
+2. Copy the .jar file inside the `libs` directory of your Android project
 
 **NOTE** If your project does not have a lib directory, place the .jar file in
 another directory and add the directory to your Java CLASSPATH variable.
@@ -90,7 +90,9 @@ The following is an example of an `AndroidManifest.xml` properly integrated:
 
 ### Calling Mohound methods
 
-1. Call `Mohound.onCreate(activity)` when your main `Activity` gets created:
+1. Do a `import com.mohound.sdk.Mohound;` on each file where the SDK will be
+   called.
+2. Call `Mohound.onCreate(activity)` when your main `Activity` gets created:
 
    ```java
    @Override
@@ -101,7 +103,7 @@ The following is an example of an `AndroidManifest.xml` properly integrated:
    }
    ```
 
-2. When you register a purchase in your app, if you want to track the ROI in
+3. When you register a purchase in your app, if you want to track the ROI in
    your campaigns, call `Mohound.trackPurchase(value, item)`:
 
    ```java
