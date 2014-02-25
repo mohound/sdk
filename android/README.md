@@ -90,7 +90,7 @@ The following is an example of an `AndroidManifest.xml` properly integrated:
 
 ### Calling Mohound methods
 
-1. Do a `import com.mohound.sdk.Mohound;` on each file where the SDK will be
+1. Add an `import com.mohound.sdk.Mohound;` on each file where the SDK will be
    called.
 2. Call `Mohound.onCreate(activity)` when your main `Activity` gets created:
 
