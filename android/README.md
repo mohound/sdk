@@ -40,7 +40,7 @@ another directory and add the directory to your Java CLASSPATH variable.
 4. If you want to enable debug mode (prints verbosely to Logger), add the
    following meta data tag:
    	```xml
-   	<meta-data android:name="MohoundDebugMode" android:value="true">
+   	<meta-data android:name="MohoundDebugMode" android:value="true" />
    	```
 
 The following is an example of an `AndroidManifest.xml` properly integrated:
