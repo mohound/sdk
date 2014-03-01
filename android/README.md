@@ -1,5 +1,5 @@
 # Mohound Android SDK
-Download latest version: [**0.0.2**](https://www.dropbox.com/s/gh4wlft0aw37h68/mohound-0.0.2.jar)
+Download latest version: [**0.0.2**](https://www.dropbox.com/s/i4yx7qqmixpwv7r/mohound-0.1.0.jar)
 
 ## Installation
 1. Download and unzip the SDK
