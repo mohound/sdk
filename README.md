@@ -1,6 +1,6 @@
 # Mohound SDK
 
-Download latest version: [**0.1.10**](https://www.dropbox.com/s/r4si4t8i1g21wj7/MohoundSDK-0.1.11.zip)
+Download latest version: [**0.1.11**](https://www.dropbox.com/s/r4si4t8i1g21wj7/MohoundSDK-0.1.11.zip)
 
 ## Installation
 
@@ -40,6 +40,53 @@ This should give you a Pong from the server showing that everything is working.
 
 ## Usage
 
-### Tracking purchases
+### Purchases
 
-You can track any in-app purchase, by calling:
+In case you want to run some ROI campaigns, then you can purchases, both
+in-app or outside your app, you'll need just to add the following pieces of code
+to make it work.
+
+#### In-app purchases
+
+* First, register your products with our SDK, right inside the
+   `productsRequest:didReceiveResponse:` method:
+
+      ```ojbc
+     - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
+      {
+        ...
+        [MohoundSDK registerProducts:response.products];
+        ...
+      }
+      ```
+
+* Then, call `[MohoundSDK trackPurchase:]`, with an `SKPaymentTransaction`
+   when a purchase gets completed:
+
+      ```objc
+      [MohoundSDK trackPurchase:transaction];
+      ```
+
+#### Out-app purchases
+
+You'll just need to call `[MohoundSDK trackPurchaseWithUSDValue:forItem]` 
+when your transaction gets completed.
+
+For example, if you want to track the purchase of a Diet Coke six pack, do:
+
+```objc
+[Mohound trackPurchaseWithUSDValue:[NSNumber numberWithFloat:2.99] forItem:@"Diet Coke six pack"];
+```
+
+### Events
+
+An event is a valuable action for an app. It represents what the user is
+supposed to do within the app. It will be used to make marketing decisions.
+i.e. it can be a user giving a review, signing up, or inviting a friend to use
+an app.
+
+For example, if you want to track when a user invited a friend, do:
+
+```objc
+[MohoundSDK trackEvent:@"UserInvitation"];
+```
