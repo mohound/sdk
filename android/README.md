@@ -24,7 +24,7 @@ another directory and add the directory to your Java CLASSPATH variable.
    	```xml
    	<receiver android:exported="true" android:name="com.mohound.sdk.ReferrerReceiver">
    	  <intent-filter>
-   	    <action android:name="com.android.vending.INSTALL_REFERRER"></action>
+        <action android:name="com.android.vending.INSTALL_REFERRER"></action>
       </intent-filter>
     </receiver>
    	```
@@ -33,14 +33,15 @@ another directory and add the directory to your Java CLASSPATH variable.
    `APP_KEY` and `SECRET_KEY` with your keys:
 
 	```xml
-	<meta-data android:name="MohoundAppKey" android:value="APP_KEY" />
-    <meta-data android:name="MohoundAppSecret" android:value="SECRET_KEY" />
+  <meta-data android:name="MohoundAppKey" android:value="APP_KEY" />
+  <meta-data android:name="MohoundAppSecret" android:value="SECRET_KEY" />
 	```
 
 4. If you want to enable debug mode (prints verbosely to Logger), add the
    following meta data tag:
+
    	```xml
-   	<meta-data android:name="MohoundDebugMode" android:value="true" />
+    <meta-data android:name="MohoundDebugMode" android:value="true" />
    	```
 
 The following is an example of an `AndroidManifest.xml` properly integrated:
@@ -84,7 +85,6 @@ The following is an example of an `AndroidManifest.xml` properly integrated:
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
 ```
 
@@ -94,14 +94,14 @@ The following is an example of an `AndroidManifest.xml` properly integrated:
    called.
 2. Call `Mohound.onCreate(activity)` when your main `Activity` gets created:
 
-   ```java
-   @Override
-   protected void onCreate(Bundle savedInstanceState) {
-       super.onCreate(savedInstanceState);
-       Mohound.onCreate(this);
-       ...
-   }
-   ```
+    ```java
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Mohound.onCreate(this);
+        ...
+    }
+    ```
 
 ## Testing connectivity
 
@@ -109,15 +109,15 @@ To check connectivity to the backend you can add the following line in your
 `onCreate` method, and enable **MohoundDebugMode** but **remember to delete
 them** before releasing your app!:
 
-   ```java
-   @Override
-   protected void onCreate(Bundle savedInstanceState) {
-       super.onCreate(savedInstanceState);
-       Mohound.onCreate(this);
-       Mohound.ping();
-       ...
-   }
-   ```
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    Mohound.onCreate(this);
+    Mohound.ping();
+    ...
+}
+```
 
 This should give you a Pong from the server showing that everything is working.
 
