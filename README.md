@@ -1,7 +1,9 @@
 # Mohound SDK
-Download latest version: [**0.1.10**](https://www.dropbox.com/s/fnxhad9kgb9ovtf/MohoundSDK-0.1.10.zip)
+
+Download latest version: [**0.1.10**](https://www.dropbox.com/s/r4si4t8i1g21wj7/MohoundSDK-0.1.11.zip)
 
 ## Installation
+
 1. Download and unzip the SDK.
 2. Add the whole MohoundSDK.framework folder to the project.
 3. Be sure to have the **AdSupport** and **StoreKit** frameworks in your project (Build phases -> Link Binary With 
@@ -20,6 +22,7 @@ Libraries). If your deployment target is iOS 5.1 or less, make sure to set AdSup
 ```
 
 ## Testing connectivity
+
 To check connectivity to the backend you can add the following lines right after the initWithAppKey method but **remember 
 to delete them** before releasing your app!:
 
@@ -34,3 +37,9 @@ to delete them** before releasing your app!:
 ```
 
 This should give you a Pong from the server showing that everything is working.
+
+## Usage
+
+### Tracking purchases
+
+You can track any in-app purchase, by calling:
