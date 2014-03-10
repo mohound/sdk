@@ -42,9 +42,8 @@ This should give you a Pong from the server showing that everything is working.
 
 ### Purchases
 
-In case you want to run some ROI campaigns, then you can purchases, both
-in-app or outside your app, you'll need just to add the following pieces of code
-to make it work.
+In case you want to run some ROI campaigns, then you'll need to track purchases. We support both in-app or outside your
+app, you'll need just to add the following pieces of code to make it work.
 
 #### In-app purchases
 
