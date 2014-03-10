@@ -1,5 +1,5 @@
 # Mohound Android SDK
-Download latest version: [**0.1.0**](https://www.dropbox.com/s/i4yx7qqmixpwv7r/mohound-0.1.0.jar)
+Download latest version: [**0.1.1**](https://www.dropbox.com/s/3nyihzig426eiq7/mohound-0.1.1.jar)
 
 ## Installation
 1. Download and unzip the SDK
@@ -103,16 +103,6 @@ The following is an example of an `AndroidManifest.xml` properly integrated:
    }
    ```
 
-3. When you register a purchase in your app, if you want to track the ROI in
-   your campaigns, call `Mohound.trackPurchase(value, item)`:
-
-   ```java
-   Mohound.trackPurchase(1.5, "5 tokens");
-   ```
-
-   **NOTE** Value should be the `double` or `float` **USD** amount of the
-   purchase. Item is a reference to the purchased object.
-
 ## Testing connectivity
 
 To check connectivity to the backend you can add the following line in your
@@ -130,3 +120,30 @@ them** before releasing your app!:
    ```
 
 This should give you a Pong from the server showing that everything is working.
+
+## Usage
+
+### Purchases
+
+In case you want to run some ROI campaigns, then you'll need to track purchases. You'll need just to add the following
+pieces of code to make it work.
+
+When your purhcase was success, call `Mohound.trackPurchase(value, item)`. For example, we want to track a 1.50 USD
+purchase of 5 tokens, then use:
+
+```java
+Mohound.trackPurchase(1.5, "5 tokens");
+```
+
+**NOTE** Value should be the `double` or `float` **USD** amount of the purchase. Item is a reference to the purchased
+object.
+
+### Events
+
+An event is a valuable action for an app. It represents what the user is supposed to do within the app. It will be used to make marketing decisions. i.e. it can be a user giving a review, signing up, or inviting a friend to use an app.
+
+For example, if you want to track when a user invited a friend, do:
+
+```java
+Mohound.trackEvent("UserInvitation");
+```
